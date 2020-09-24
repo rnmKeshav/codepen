@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "server": "node _server/server.js",
-    "dev": "npm-run-all build:* server",
+    "dev": "npm-run-all clean build:* server",
     "start:dev": "nodemon",
-    "build:server": "babel server -d _server"
+    "build:server": "babel server -d _server",
+    "clean": "rimraf _server/*"
   },
   "keywords": [],
   "author": "",
