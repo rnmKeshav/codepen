@@ -6,7 +6,8 @@
   "exec": "npm run dev",
   "verbose": true,
   "watch": [
-    "server/*"
+    "server/*",
+    "src/*"
   ],
   "delay": "300", 
   "env": {
