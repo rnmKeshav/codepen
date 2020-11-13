@@ -8,9 +8,13 @@ import ServerLayout from "./ServerLayout";
 const server_port = 3000;
 const server = express();
 
+
+server.use("/js",express.static("assets/js"));
+server.use("/css",  (req, res, next) => {setTimeout(function () {next()}, 4000)}, express.static("assets/css", { maxAge: 60000 }));
+server.use("/font", (req, res, next) => {setTimeout(function () {next()}, 3000)}, express.static("assets/font"));
+
 server.get("/", function (req, res) {
   let rendered_component = App();
-  console.log("rendered_component", typeof rendered_component, rendered_component);
   let st = ReactDOMServer.renderToString(<App />);
   
   let html = ServerLayout(st);

@@ -4,7 +4,10 @@ const App = () => {
 
   console.log("Hi")
   return (
-    <div>Hi i am app</div>
+    <div>Hi i am app
+
+      <div id="hidden"></div>
+    </div>
   );
 }
 
