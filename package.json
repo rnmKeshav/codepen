@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node _server/Server.js",
     "dev": "npm-run-all clean build:* server",
-    "start:dev": "nodemon",
+    "start": "nodemon",
     "build:server": "babel server -d _server && babel src -d _src",
     "clean": "rimraf _server/* _src/*"
   },
