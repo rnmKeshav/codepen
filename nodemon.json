@@ -1,0 +1,16 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "exec": "npm run dev",
+  "verbose": true,
+  "watch": [
+    "server/*",
+    "src/*"
+  ],
+  "delay": "300", 
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
