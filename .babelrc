@@ -1,6 +1,6 @@
 {
-  "plugins": [
-    ["module-rewrite", { "replaceFunc": "./tools/replace-server-paths.js" }]
-  ],
+  // "plugins": [
+  //   ["module-rewrite", { "replaceFunc": "./tools/replace-server-paths.js" }]
+  // ],
   "presets": ["@babel/preset-react", "@babel/preset-env"]
 }
